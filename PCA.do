@@ -1,0 +1,13 @@
+clear all
+
+import delimited "C:\Users\Sergio Julian Zona M\Desktop\Repositorios\Universidad\HEC_Proyecto_Final\output\census73_grouped.csv"
+
+pca p03_sexo p04_edad p10_lee_es p11_estudi p18_trab73 p19a_singr p20_thnv p05_estciv_casado p05_estciv_separado p05_estciv_soltero p05_estciv_unionlibre p05_estciv_viudo p12_nivele_ninguno p12_nivele_otros p12_nivele_primaria p12_nivele_secundariabachillerat p12_nivele_secundarianormal p12_nivele_secundariatecnica p12_nivele_superior p14_trabaj_buscoporprimeravez p14_trabaj_buscoyhatrabajado p14_trabaj_estudio p14_trabaj_jubilado p14_trabaj_notrabajo p14_trabaj_quehaceresdelhogar p14_trabaj_sinactividad p14_trabaj_trabajo p14_trabaj_viviodesurenta, components(10)
+
+rotate
+
+predict y_index
+
+reg y_index league, robust
+
+reg y_index num_leagues, robust

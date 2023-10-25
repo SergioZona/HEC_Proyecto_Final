@@ -1,0 +1,13 @@
+clear all
+
+import delimited "C:\Users\Sergio Julian Zona M\Desktop\Repositorios\Universidad\HEC_Proyecto_Final\output\census73_grouped.csv"
+
+ 
+
+rotate
+
+predict y_index
+
+reg y_index league, robust
+
+reg y_index num_leagues, robust
