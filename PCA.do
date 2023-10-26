@@ -8,7 +8,6 @@ describe $xlist
 summarize $xlist
 corr $xlist
 
-display c(linesize)
 pca $xlist, mineigen(1) blanks(0.35)
 
 // Component rotation
